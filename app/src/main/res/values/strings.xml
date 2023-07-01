@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Resto</string>
+
+    <string name="food_name">Chicken Biryani</string>
+    <string name="food_price">UGX. 45,000</string>
+    <string name="food_description">Chicken Biryani Chicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken BiryaniChicken Biryani
+    </string>
+    <string name="enter_food_name">Enter Food Name</string>
+    <string name="enter_food_price">Enter Food Price</string>
+    <string name="enter_food_description">Enter Food Description</string>
+    <string name="add_food">Add Food</string>
+</resources>
