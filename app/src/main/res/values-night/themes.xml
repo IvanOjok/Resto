@@ -4,6 +4,13 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="colorPrimary">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorSecondary">@color/orange</item>
+        <item name="android:actionBarItemBackground">@color/orange</item>
         <item name="android:statusBarColor">@color/light_orange</item>
+    </style>
+
+    <style name="Theme.Resto" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/dark</item>
     </style>
 </resources>

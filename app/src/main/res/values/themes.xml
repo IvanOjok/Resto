@@ -5,7 +5,15 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="colorPrimary">@color/orange</item>
         <item name="android:statusBarColor">@color/light_orange</item>
+        <item name="android:editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense</item>
+        <item name="textInputOutlinedStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense</item>
+        <item name="android:buttonTint">@color/orange</item>
     </style>
 
-    <style name="Theme.Resto" parent="Base.Theme.Resto" />
+    <style name="Theme.Resto" parent="Theme.MaterialComponents.DayNight.NoActionBar" >
+        <item name="android:statusBarColor">@color/green</item>
+        <item name="android:buttonTint">@color/orange</item>
+        <item name="android:button">@color/orange</item>
+    </style>
 </resources>

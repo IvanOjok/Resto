@@ -1,7 +1,11 @@
 package com.ivanojok.resto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
@@ -12,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.textfield.TextInputEditText
 import com.ivanojok.resto.data.FoodAdapter
 import com.ivanojok.resto.data.FoodModel
+import com.ivanojok.resto.data.Preferences
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +69,8 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Information is Empty", Toast.LENGTH_LONG).show()
             }
         }
+
+
     }
 
     fun createRecycler(list: ArrayList<FoodModel>) {
@@ -72,4 +79,22 @@ class MainActivity : AppCompatActivity() {
         recycler.adapter = myAdapter
         recycler.layoutManager = LinearLayoutManager(this)
     }
+
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflater = MenuInflater(this).inflate(R.menu.logout_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val logout = item.itemId
+        if (logout == R.id.logout) {
+            val preferences = Preferences(this).sharedPreferences
+            preferences.all.clear()
+            startActivity(Intent(this, LoginActivity::class.java))
+            finish()
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
 }
