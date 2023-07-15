@@ -15,4 +15,5 @@
     <string name="enter_login">Enter Credentials to Login</string>
     <string name="sign_in">SignIn</string>
     <string name="logout">Logout</string>
+
 </resources>
